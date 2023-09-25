@@ -1,0 +1,262 @@
+header{
+    background-color: #050101;
+    color: #e7dde3;
+    line-height: 200%;
+    font-family:'Franklin Gothic Medium';
+    font-size: 2em;
+    text-indent: 3em;
+    position: center;
+}
+
+
+  div.navbar {
+    background-color: rgba(4, 0, 0, 0.959);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.navbar a {
+    display: inline-block;
+    color: rgb(239, 18, 161);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    top: 0;
+  }
+  
+  div.navbar a:hover {
+    background-color: rgb(95, 217, 239);
+  }
+
+body {
+    background-color: #050103;
+    color: #9da0ee;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    background-color: #f5f4f4;
+    color: #e6088d;
+    line-height: 200%;
+    font-family: Georgia, "Times New Roman", serif;
+    text-indent: 1em;
+  
+}
+
+h2 {
+    background-color: #f5f4f4;
+    color: #e6088d;
+    line-height: 200%;
+    font-family: Georgia, "Times New Roman", serif;
+    text-indent: 1em;
+   
+}
+
+h3{
+  background-color: #f5f4f4;
+    color: #e6088d;
+    line-height: 200%;
+    font-family: Georgia, "Times New Roman", serif;
+    text-indent: 1em;
+   
+}
+
+table{
+   table-layout: fixed;
+   border:1px solid;
+   color: #050b0f;
+   margin-left:auto;
+   margin-right:auto;
+  border-width: 90%;
+  border-collapse: collapse;
+  border-style: double;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+}
+
+th {
+    background-color: #510b39;
+    color: #f2c6e0;
+    line-height: 200%;
+    font-family: Georgia, "Times New Roman", serif;
+    text-indent: 1em;
+    box-shadow: 3px 3px 5px #000000; 
+}
+
+tr{
+   background-color: #5047f7;
+    color: #94c4e0;
+    line-height: 200%;
+    font-family: Georgia, "Times New Roman", serif;
+    text-indent: 1em;
+    box-shadow: 3px 3px 5px #503333; 
+    table-layout: fixed;
+    border-radius: 1em;
+    border:1px solid;
+    color: #06151f;
+ 
+}
+
+td{
+  background-color: #dbd5e9;
+    color: #02090d;
+    line-height: 200%;
+    font-family: Georgia, "Times New Roman", serif;
+    text-indent: 1em;
+    box-shadow: 3px 3px 5px #d9bfbf; 
+    table-layout: fixed;
+    border-radius: 1em;
+    border:1px solid;
+    color: #06151f;
+ 
+}
+p {
+    font-size: 2em ;
+    text-indent: 3em;
+    font-family: 'Times new roman';
+    font-weight: bold;
+    position:center;
+    padding: 4%;
+
+}
+
+
+div {
+    font-weight: lighter;
+    position: center;
+}
+
+section{
+    position: left;
+    font-size: .9em ;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
+    padding: 9%;
+    box-shadow: #000;
+}
+
+
+.container {
+  position: fixed;
+  text-align: center;
+  color: rgb(52, 4, 4);
+  height: fit-content;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Verdana;
+  color: #f8f5f5 ;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Courier New';
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family:Verdana;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  font-size: large;
+  font-weight: bold;
+  color: #081a5d;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(235, 42, 174);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #fff2f2;
+  color: #081a5d;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #d70f1c;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #efe9e9;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid rgb(221, 38, 90);
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid rgb(27, 248, 248);
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+ 
+  
+ 
+  
+  
+
+
+
+
+
+
+
+
