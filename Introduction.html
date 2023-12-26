@@ -4,39 +4,28 @@
         <title>My Portfolio</title>  
         <link rel="stylesheet" href="project.css">
         <style>
-            /* Add any CSS styles for the header or other elements here */
-            header {
-                text-align: center;
-                font-size: 24px;
-                background-color: #f2f2f2;
-                padding: 20px 0;
-            }
-            .navbar {
-                background-color: #333;
-                overflow: hidden;
-            }
-            .navbar a {
-                float: left;
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 20px;
-                text-decoration: none;
-            }
-            .navbar a:hover {
-                background-color: #ddd;
-                color: black;
-            }
-            .centered {
-                text-align: center;
-                margin-top: 20px;
-            }
+           
         </style>
         <script type="text/javascript">
             window.onload = function() {
-                window.alert("Hello!! Welcome to Anshpreet's Portfolio");
+                const welcomeMessage = document.createElement('div');
+                welcomeMessage.setAttribute('id', 'welcomeMessage');
+                welcomeMessage.innerHTML = `
+                    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border: 2px solid #333; border-radius: 8px; text-align: center;">
+                        <h2>Hello!</h2>
+                        <p>Welcome to Anshpreet's Portfolio</p>
+                        <button onclick="closeWelcomeMessage()">Close</button>
+                    </div>
+                `;
+                document.body.appendChild(welcomeMessage);
+            }
+        
+            function closeWelcomeMessage() {
+                const welcomeMessage = document.getElementById('welcomeMessage');
+                welcomeMessage.parentNode.removeChild(welcomeMessage);
             }
         </script>
+        
     </head>
     <body>
         <header>My personal Portfolio</header>
