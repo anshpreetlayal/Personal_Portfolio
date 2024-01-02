@@ -1,10 +1,19 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>My Portfolio</title>  
-        <link rel="stylesheet" href="project.css">
-        <style>
-        body, h1, h2, h3, h4, h5, h6, ul, li, p {
+
+<head>
+    <link rel="stylesheet" href="project.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        li,
+        p {
             margin: 0;
             padding: 0;
         }
@@ -37,6 +46,7 @@
             display: inline;
             margin: 0;
         }
+
         .navbar a {
             color: white;
             text-decoration: none;
@@ -48,10 +58,12 @@
             background-color: #ddd;
             color: black;
         }
+
         .main-content {
             text-align: center;
             margin-top: 20px;
         }
+
         .image-container {
             position: relative;
             max-width: 100%;
@@ -70,57 +82,41 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 10px;
             max-width: 80%;
+            color: #333;
         }
-        </style>
-        <script type="text/javascript">
-            window.onload = function() {
-                const welcomeMessage = document.createElement('div');
-                welcomeMessage.setAttribute('id', 'welcomeMessage');
-                welcomeMessage.innerHTML = `
-                    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; border: 2px solid #333; border-radius: 8px; text-align: center;">
-                        <h2>Hello!</h2>
-                        <p>Welcome to Anshpreet's Portfolio</p>
-                        <button onclick="closeWelcomeMessage()">Close</button>
-                    </div>
-                `;
-                document.body.appendChild(welcomeMessage);
-            }
-        
-            function closeWelcomeMessage() {
-                const welcomeMessage = document.getElementById('welcomeMessage');
-                welcomeMessage.parentNode.removeChild(welcomeMessage);
-            }
-        </script>
-        
-    </head>
-    <body>
-        <header>
-            <h1>My Personal Portfolio</h1>
-        </header>
-    
-        <nav class="navbar">
-            <ul>
-                <li><a href="Introduction.html">Introduction</a></li>
-                <li><a href="Education.html">Education</a></li>
-                <li><a href="Skills.html">Skills</a></li>
-                <li><a href="Hobbies.html">Hobbies</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Project.html">Projects</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    
-        <section class="main-content">
-            <div class="image-container">
-                <img src="Pictures/water.jpg" alt="Nature Image">
-                <div class="centered-text">
-                    <p>Hello there! I'm Anshpreet Kaur, an enthusiastic computer programming student currently progressing through my second year of studies. My current skill set encompasses proficiency in Java, Python, SQL, JavaScript, React, and the software development life cycle (SDLC). However, my journey doesn't end with what I know now; I'm in a perpetual state of learning, exploring new concepts and technologies every day.</p>
-                </div>
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="Introduction.html">Introduction</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Project.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="image-container">
+            <img src="Pictures/water.jpg" alt="Nature Image">
+            <div class="centered-text">
+                <p>Hello there! I'm Anshpreet Kaur, an enthusiastic computer programming student currently progressing
+                    through my second year of studies. My current skill set encompasses proficiency in Java, Python,
+                    SQL, JavaScript, React, and the software development life cycle (SDLC). However, my journey doesn't
+                    end with what I know now; I'm in a perpetual state of learning, exploring new concepts and
+                    technologies every day.</p>
             </div>
-        </section>
-    </body>
-    </html>
+        </div>
+    </section>
+</body>
+
+</html>
