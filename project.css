@@ -311,6 +311,7 @@ header {
     color: black;
 }
 
+
 .background-image {
   background-image: url('Pictures/water.jpg');
   background-size: cover;
@@ -330,6 +331,3 @@ header {
   max-width: 80%;
   color: #333;
 }
-
-
-
