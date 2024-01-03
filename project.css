@@ -311,22 +311,25 @@ header {
     color: black;
 }
 
-
-
-.centered-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 80%;
-    color: #333;
+.background-image {
+  background-image: url('Pictures/water.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  position: relative;
 }
 
-
-
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  color: #333;
+}
 
 
 
