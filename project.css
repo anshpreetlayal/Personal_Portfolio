@@ -311,23 +311,7 @@ header {
     color: black;
 }
 
-.main-content {
-    text-align: center;
-    margin-top: 20px;
-}
 
-.image-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
 
 .centered-text {
     position: absolute;
