@@ -1,72 +1,64 @@
-header{
-    background-color: #050101;
-    color: #e7dde3;
-    line-height: 200%;
-    font-family:'Franklin Gothic Medium';
-    font-size: 2em;
-    text-indent: 3em;
-    position: center;
-}
-
-
-  div.navbar {
-    background-color: rgba(4, 0, 0, 0.959);
-    overflow: auto;
-    white-space: nowrap;
-  }
-  
-  div.navbar a {
-    display: inline-block;
-    color: rgb(239, 18, 161);
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    top: 0;
-  }
-  
-  div.navbar a:hover {
-    background-color: rgb(95, 217, 239);
-  }
-
 body {
-    background-color: #050103;
-    color: #9da0ee;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #050103;
+  color: #9da0ee;
 }
 
-h1 {
-    background-color: #f5f4f4;
-    color: #e6088d;
-    line-height: 200%;
-    font-family: Georgia, "Times New Roman", serif;
-    text-indent: 1em;
-  
+header {
+  text-align: center;
+  font-size: 36px;
+  background-color: #050101;
+  color: #e7dde3;
+  padding: 20px 0;
+  font-family: 'Franklin Gothic Medium';
+  line-height: 200%;
 }
 
-h2 {
-    background-color: #f5f4f4;
-    color: #e6088d;
-    line-height: 200%;
-    font-family: Georgia, "Times New Roman", serif;
-    text-indent: 1em;
-   
+.navbar {
+  background-color: rgba(4, 0, 0, 0.959);
+  overflow: auto;
+  white-space: nowrap;
 }
 
-h3{
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0;
+}
+
+.navbar a {
+  color: rgb(239, 18, 161);
+  text-decoration: none;
+  padding: 14px;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: rgb(95, 217, 239);
+  color: black;
+}
+
+h1, h2, h3 {
   background-color: #f5f4f4;
-    color: #e6088d;
-    line-height: 200%;
-    font-family: Georgia, "Times New Roman", serif;
-    text-indent: 1em;
-   
+  color: #e6088d;
+  line-height: 200%;
+  font-family: Georgia, "Times New Roman", serif;
+  text-indent: 1em;
 }
 
-table{
-   table-layout: fixed;
-   border:1px solid;
-   color: #050b0f;
-   margin-left:auto;
-   margin-right:auto;
+table {
+  table-layout: fixed;
+  border: 1px solid;
+  color: #050b0f;
+  margin-left: auto;
+  margin-right: auto;
   border-width: 90%;
   border-collapse: collapse;
   border-style: double;
@@ -74,71 +66,65 @@ table{
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-
 }
 
 th {
-    background-color: #510b39;
-    color: #f2c6e0;
-    line-height: 200%;
-    font-family: Georgia, "Times New Roman", serif;
-    text-indent: 1em;
-    box-shadow: 3px 3px 5px #000000; 
+  background-color: #510b39;
+  color: #f2c6e0;
+  line-height: 200%;
+  font-family: Georgia, "Times New Roman", serif;
+  text-indent: 1em;
+  box-shadow: 3px 3px 5px #000000;
 }
 
-tr{
-   background-color: #5047f7;
-    color: #94c4e0;
-    line-height: 200%;
-    font-family: Georgia, "Times New Roman", serif;
-    text-indent: 1em;
-    box-shadow: 3px 3px 5px #503333; 
-    table-layout: fixed;
-    border-radius: 1em;
-    border:1px solid;
-    color: #06151f;
- 
+tr {
+  background-color: #5047f7;
+  color: #94c4e0;
+  line-height: 200%;
+  font-family: Georgia, "Times New Roman", serif;
+  text-indent: 1em;
+  box-shadow: 3px 3px 5px #503333;
+  table-layout: fixed;
+  border-radius: 1em;
+  border: 1px solid;
+  color: #06151f;
 }
 
-td{
+td {
   background-color: #dbd5e9;
-    color: #02090d;
-    line-height: 200%;
-    font-family: Georgia, "Times New Roman", serif;
-    text-indent: 1em;
-    box-shadow: 3px 3px 5px #d9bfbf; 
-    table-layout: fixed;
-    border-radius: 1em;
-    border:1px solid;
-    color: #06151f;
- 
+  color: #02090d;
+  line-height: 200%;
+  font-family: Georgia, "Times New Roman", serif;
+  text-indent: 1em;
+  box-shadow: 3px 3px 5px #d9bfbf;
+  table-layout: fixed;
+  border-radius: 1em;
+  border: 1px solid;
+  color: #06151f;
 }
+
 p {
-    font-size: 2em ;
-    text-indent: 3em;
-    font-family: 'Times new roman';
-    font-weight: bold;
-    position:center;
-    padding: 4%;
-
+  font-size: 2em;
+  text-indent: 3em;
+  font-family: 'Times new roman';
+  font-weight: bold;
+  text-align: center;
+  padding: 4%;
 }
-
 
 div {
-    font-weight: lighter;
-    position: center;
+  font-weight: lighter;
+  text-align: center;
 }
 
-section{
-    position: left;
-    font-size: .9em ;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium';
-    font-weight: bold;
-    padding: 9%;
-    box-shadow: #000;
+section {
+  text-align: center;
+  font-size: .9em;
+  font-family: 'Franklin Gothic Medium';
+  font-weight: bold;
+  padding: 9%;
+  box-shadow: #000;
 }
-
 
 .container {
   position: fixed;
@@ -153,24 +139,10 @@ section{
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: Verdana;
-  color: #f8f5f5 ;
+  color: #f8f5f5;
   font-size: large;
   font-weight: bold;
   font-family: 'Courier New';
-}
-
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-family:Verdana;
-  transform: translate(-50%, -50%);
 }
 
 footer {
@@ -179,13 +151,13 @@ footer {
   color: #081a5d;
 }
 
-
 * {
   box-sizing: border-box;
 }
 
-
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid rgb(235, 42, 174);
@@ -212,14 +184,12 @@ input[type=submit]:hover {
   padding: 10px;
 }
 
-
 .column {
   float: left;
   width: 50%;
   margin-top: 6px;
   padding: 20px;
 }
-
 
 .row:after {
   content: "";
@@ -247,70 +217,12 @@ div.desc {
   padding: 10px;
   text-align: center;
 }
- 
-
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-li,
-p {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
-}
-
-header {
-    text-align: center;
-    font-size: 36px;
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-}
-
-.navbar {
-    background-color: #333;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    display: inline;
-    margin: 0;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: inline-block;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
 
 .background-image {
   background-image: url('Pictures/water.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh; 
+  height: 100vh;
   position: relative;
 }
 
