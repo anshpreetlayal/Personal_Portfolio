@@ -22,28 +22,7 @@ header {
   white-space: nowrap;
 }
 
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-.navbar li {
-  display: inline;
-  margin: 0;
-}
-
-.navbar a {
-  color: rgb(239, 18, 161);
-  text-decoration: none;
-  padding: 14px;
-  display: inline-block;
-}
-
-.navbar a:hover {
-  background-color: rgb(95, 217, 239);
-  color: black;
-}
 
 h1, h2, h3 {
   background-color: #f5f4f4;
