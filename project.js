@@ -19,10 +19,12 @@ document.addEventListener("DOMContentLoaded", function() {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            // Adjust the condition to determine the active section as per your layout
+            if (window.scrollY >= sectionTop - sectionHeight / 3) {
                 current = section.getAttribute('id');
             }
         });
+        // Apply the 'data-active' attribute to the body element
         document.body.setAttribute('data-active', current);
     });
 });
