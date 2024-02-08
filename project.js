@@ -1,23 +1,28 @@
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            const target = document.querySelector(this.getAttribute('href'));
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+            });
         });
     });
-});
 
-// Highlight the current page in navigation bar
-document.addEventListener('DOMContentLoaded', function () {
-    const currentPage = window.location.pathname.split('/').pop().split('.')[0];
-    const links = document.querySelectorAll('.navbar a');
-
-    links.forEach(link => {
-        const linkPage = link.getAttribute('href').split('.')[0];
-        if (linkPage === currentPage) {
-            link.classList.add('active');
-        }
+    // Change background color on scroll
+    const sections = document.querySelectorAll('.section');
+    window.addEventListener('scroll', function() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                current = section.getAttribute('id');
+            }
+        });
+        document.body.setAttribute('data-active', current);
     });
 });
