@@ -6,120 +6,287 @@
     <title>Anshpreet's Portfolio</title>
     <link rel="stylesheet" href="project.css">
     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Pictures/water.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
         .container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .section {
             height: 100vh;
-            overflow-y: auto;
-            padding: 20px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
         }
 
         .navbar {
-            background-color: #444;
-            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
         }
 
         .navbar a {
-            float: left;
-            display: block;
             color: #fff;
-            text-align: center;
-            padding: 14px 16px;
             text-decoration: none;
-            background-color: #000;
-            border: 1px solid #fff;
-            margin: 0 2px;
-            border-radius: 8px;
+            margin: 0 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .navbar a:hover {
-            background-color: #ddd;
-            color: #333;
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
-        img {
-            width: 100%;
-            height: 80%;
-        }
-
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
             color: #fff;
-            font-size: 24px;
+            text-decoration: none;
         }
 
-        p {
-            font-size: medium;
-            font-style: italic;
+        .navbar-menu {
+            display: flex;
+            align-items: center;
         }
 
-        .project-list {
-            margin-top: 20px;
+        .navbar-toggle {
+            display: none;
+            cursor: pointer;
         }
 
-        section {
-            margin-top: 20px;
+        .navbar-toggle-icon {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-toggle-icon.top {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .navbar-toggle-icon.middle {
+            opacity: 0;
+        }
+
+        .navbar-toggle-icon.bottom {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        .navbar-collapse {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease;
+            transform: translateY(-100%);
+        }
+
+        .navbar-collapse.active {
+            transform: translateY(0);
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .navbar-nav li {
+            margin-bottom: 10px;
+        }
+
+        .navbar-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .content.active {
+            transform: translateY(-100%);
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="navbar">
-            <nav>
-                <a href="#introduction">Introduction</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-
-        <div id="introduction">
-            <img src="Pictures/water.jpg" alt="Portfolio Image">
-            <div class="centered">
-                <h1>Greetings!</h1>
-                <p>Welcome to my portfolio! I'm Anshpreet, delighted to have you here. Currently traversing the exciting journey towards becoming a proficient engineer, I find myself immersed in the captivating world of computer programming. As I stride through my second year of computational studies, every line of code written, and every algorithm crafted, ignites my passion for innovation and problem-solving.</p>
+        <nav class="navbar">
+            <a href="#" class="navbar-logo">Anshpreet</a>
+            <div class="navbar-toggle">
+                <div class="navbar-toggle-icon top"></div>
+                <div class="navbar-toggle-icon middle"></div>
+                <div class="navbar-toggle-icon bottom"></div>
+            </div>
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <div id="introduction" class="section">
+                <img src="Pictures/water.jpg" alt="Portfolio Image">
+                <div class="centered">
+                    <h1>Greetings!</h1>
+                    <p>Welcome to my portfolio! I'm Anshpreet, delighted to have you here. Currently traversing the exciting journey towards becoming a proficient engineer, I find myself immersed in the captivating world of computer programming. As I stride through my second year of computational studies, every line of code written, and every algorithm crafted, ignites my passion for innovation and problem-solving.</p>
+                </div>
+            </div>
+            <div id="projects" class="section">
+                <div class="project-list">
+                    <h2>Projects</h2>
+                    <table>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Description</th>
+                            <th>Technologies Used</th>
+                            <th>Project Link</th>
+                        </tr>
+                        <tr>
+                            <td>practice_sql</td>
+                            <td>It is a practice repository to enhance my SQL skills</td>
+                            <td>SQL</td>
+                            <td><a href="https://github.com/anshpreetlayal/practice_sql">Practice_SQL</a></td>
+                        </tr>
+                        <tr>
+                            <td>Chess_Game</td>
+                            <td>This project is a simple implementation of a chess game in Java. It allows two players to make moves on a command-line interface.</td>
+                            <td>JAVA, OOP</td>
+                            <td><a href="https://github.com/anshpreetlayal/Chess_Game">Chess_Game</a></td>
+                        </tr>
+                        <tr>
+                            <td>Practice_Python</td>
+                            <td>This is a practice repository for learning Python.</td>
+                            <td>Python</td>
+                            <td><a href="https://github.com/anshpreetlayal/practice_python">Practice_Python</a></td>
+                        </tr>
+                        <tr>
+                            <td>Movie-AI</td>
+                            <td>Movie-AI is an innovative movie recommendation system empowered by artificial intelligence and machine learning. It's designed to enhance your movie-watching experience by providing personalized movie suggestions and smart features.</td>
+                            <td>JavaScript, React, Node.js</td>
+                            <td><a href="https://github.com/anshpreetlayal/Movie-AI">Movie-AI</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="skills" class="section">
+                <section>
+                    <h2>My Skill Section</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SOFT SKILLS</th>
+                                <th>TECHNICAL SKILLS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Communication</td>
+                                <td>HTML/CSS</td>
+                            </tr>
+                            <tr>
+                                <td>Teamwork</td>
+                                <td>JavaScript</td>
+                            </tr>
+                            <tr>
+                                <td>Problem-solving</td>
+                                <td>Python</td>
+                            </tr>
+                            <tr>
+                                <td>Adaptability</td>
+                                <td>React</td>
+                            </tr>
+                            <tr>
+                                <td>Time Management</td>
+                                <td>SQL</td>
+                            </tr>
+                            <tr>
+                                <td>Leadership</td>
+                                <td>Git</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </div>
         </div>
+    </div>
 
-        <div class="project-list" id="projects">
-            <h2>Projects</h2>
-            <table>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                    <th>Technologies Used</th>
-                    <th>Project Link</th>
-                </tr>
-                <tr>
-                    <td>practice_sql</td>
-                    <td>It is a practice repository to enhance my SQL skills</td>
-                    <td>SQL</td>
-                    <td><a href="https://github.com/anshpreetlayal/practice_sql">Practice_SQL</a></td>
-                </tr>
-                <tr>
-                    <td>Chess_Game</td>
-                    <td>This project is a simple implementation of a chess game in Java. It allows two players to make moves on a command-line interface.</td>
-                    <td>JAVA, OOP</td>
-                    <td><a href="https://github.com/anshpreetlayal/Chess_Game">Chess_Game</a></td>
-                </tr>
+    <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+        const navbarLinks = document.querySelectorAll('.navbar-nav li');
 
-                <tr>
-                    <td>Practice_Python</td>
-                    <td>This is a practice repository for learning Python.</td>
-                    <td>Python</td>
-                    <td><a href="https://github.com/anshpreetlayal/practice_python">Practice_Python</a></td>
-                </tr>
+        navbarToggle.addEventListener('click', () => {
+            navbarToggle.classList.toggle('active');
+            navbarMenu.classList.toggle('active');
+        });
 
-                <tr>
-                    <td>Movie-AI</td>
-                    <td>Movie-AI is an innovative movie recommendation system empowered by artificial intelligence and machine learning. It's designed to enhance your movie-watching experience by providing personalized movie suggestions and smart features.</td>
-                    <td>JavaScript, React, Node.js</td>
-                    <td><a href="https://github.com/anshpreetlayal/Movie-AI">Movie-AI</a></td>
-                </tr>
-            </table>
-        </div>
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbarToggle.classList.remove('active');
+                navbarMenu.classList.remove('active');
+            });
+        });
 
-    </head>
-    
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
