@@ -8,16 +8,17 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-         
+            background-color: black; 
+            color: rgb(218, 5, 58); 
         }
-
+        
         .container {
             width: 100%;
             height: 100%;
             overflow: hidden;
             position: relative;
         }
-
+        
         .section {
             height: 100vh;
             width: 100%;
@@ -26,13 +27,8 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: #fff;
+            color: white;
             font-size: 2rem;
-        }
-
-        .section {
-            color: #fff;
-            z-index: 1;
         }
         
         .navbar {
@@ -48,105 +44,34 @@
             align-items: center;
             transition: background-color 0.3s ease;
         }
-
+        
         .navbar a {
-            color: #fff;
+            color: white; 
             text-decoration: none;
             margin: 0 10px;
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-
+        
         .navbar a:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
-
+        
         .navbar-logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #fff;
+            color: white; 
             text-decoration: none;
         }
-
-        .navbar-menu {
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar-toggle {
-            display: none;
-            cursor: pointer;
-        }
-
-        .navbar-toggle-icon {
-            width: 25px;
-            height: 3px;
-            background-color: #fff;
-            display: block;
-            transition: all 0.3s ease;
-        }
-
-        .navbar-toggle-icon.top {
-            transform: translateY(7px) rotate(45deg);
-        }
-
-        .navbar-toggle-icon.middle {
-            opacity: 0;
-        }
-
-        .navbar-toggle-icon.bottom {
-            transform: translateY(-7px) rotate(-45deg);
-        }
-
-        .navbar-collapse {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            transition: transform 0.3s ease;
-            transform: translateY(-100%);
-        }
-
-        .navbar-collapse.active {
-            transform: translateY(0);
-        }
-
-        .navbar-nav {
-            display: flex;
-            flex-direction: row; 
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-        }
-
-        .navbar-nav li {
-            margin-bottom: 10px;
-        }
-
-        .navbar-nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .navbar-nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
+        
 
         .content {
-            position: absolute;
-            top: 0;
-            left: 0;
+            position:relative;
             width: 100%;
             height: auto;
             transition: transform 0.3s ease;
+            color: rgb(109, 98, 207);
         }
 
         .content.active {
@@ -175,7 +100,6 @@
         </nav>
         <div class="content">
             <div id="introduction" class="section">
-                <img src="Pictures/water.jpg" alt="Portfolio Image">
                 <div class="centered">
                     <h1>Greetings!</h1>
                     <p>Welcome to my portfolio! I'm Anshpreet, delighted to have you here. Currently traversing the exciting journey towards becoming a proficient engineer, I find myself immersed in the captivating world of computer programming. As I stride through my second year of computational studies, every line of code written, and every algorithm crafted, ignites my passion for innovation and problem-solving.</p>
