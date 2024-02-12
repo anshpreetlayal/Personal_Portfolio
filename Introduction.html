@@ -9,7 +9,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: black; 
-            color: rgb(218, 5, 58); 
+            color: rgb(197, 185, 188); 
         }
         
         .container {
@@ -38,10 +38,9 @@
             width: 100%;
             z-index: 1000;
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 20px;
+            padding: 10px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: space-evenly;
             transition: background-color 0.3s ease;
         }
         
@@ -54,6 +53,9 @@
             transition: background-color 0.3s ease;
         }
         
+        .navbar li {
+            display: inline;
+        }
         .navbar a:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
@@ -65,7 +67,7 @@
             text-decoration: none;
         }
         
-
+        
         .content {
             position:relative;
             width: 100%;
