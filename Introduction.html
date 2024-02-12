@@ -80,28 +80,51 @@
         .content.active {
             transform: translateY(-100%);
         }
-        .contact {
-            background-color: black;
-            color: white;
-            padding: 50px 20px;
-        }
-        
-        .contact h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        
         .contact-container {
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .contact-info {
+            flex: 0 0 45%; /* Adjust as needed */
         }
         
         .contact-form {
-            margin-top: 20px;
+            flex: 0 0 45%; /* Adjust as needed */
+        }
+        
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+        
+        .contact-info ul li strong {
+            font-weight: bold;
+        }
+        
+        .contact-info ul li a {
+            color: #da053a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-form h3 {
+            margin-bottom: 20px;
+        }
+        
+        .contact-form .form-group {
+            margin-bottom: 20px;
         }
         
         .contact-form label {
             display: block;
+            font-weight: bold;
             margin-bottom: 5px;
         }
         
@@ -110,7 +133,7 @@
         .contact-form textarea {
             width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
+            margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
@@ -119,7 +142,7 @@
             height: 150px;
         }
         
-        .contact-form input[type="submit"] {
+        .contact-form button[type="submit"] {
             background-color: #da053a;
             color: white;
             border: none;
@@ -129,11 +152,10 @@
             transition: background-color 0.3s ease;
         }
         
-        .contact-form input[type="submit"]:hover {
+        .contact-form button[type="submit"]:hover {
             background-color: #ff1f5a;
         }
         
-       
     </style>
 </head>
 
@@ -240,13 +262,13 @@
             </div>
             <div id="contact" class="section">
                 <div class="contact-container">
-                    <h2>Contact Me</h2>
                     <div class="contact-info">
+                        <h2>Contact Me</h2>
                         <p>Feel free to reach out to me via email or connect with me on LinkedIn and GitHub:</p>
                         <ul>
                             <li><strong>Email:</strong> anshpreetlayal@outlook.com</li>
-                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anshpreetlayal/" target="_blank">My LinkedIn Profile</a></li>
-                            <li><strong>Github:</strong> <a href="https://github.com/anshpreetlayal" target="_blank">My Github Profile</a></li>
+                            <li> <a href="https://www.linkedin.com/in/anshpreetlayal/" target="_blank"> LinkedIn </a></li>
+                            <li><a href="https://github.com/anshpreetlayal" target="_blank"> Github </a></li>
                         </ul>
                     </div>
                     <div class="contact-form">
@@ -269,6 +291,7 @@
                     </div>
                 </div>
             </div>
+            
                      
             
     </div>
