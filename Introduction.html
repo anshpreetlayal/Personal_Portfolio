@@ -8,8 +8,8 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: black; 
-            color: rgb(197, 185, 188); 
+            background-color: black;
+            color: rgb(197, 185, 188);
         }
         
         .container {
@@ -45,7 +45,7 @@
         }
         
         .navbar a {
-            color: white; 
+            color: white;
             text-decoration: none;
             margin: 0 10px;
             padding: 10px 15px;
@@ -55,8 +55,8 @@
         
         .navbar li {
             display: inline;
-            
         }
+        
         .navbar a:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
@@ -64,35 +64,45 @@
         .navbar-logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: white; 
+            color: white;
             text-decoration: none;
         }
         
         
         .content {
-            position:relative;
+            position: relative;
             width: 100%;
             height: auto;
             transition: transform 0.3s ease;
-            color: rgb(109, 98, 207);
         }
-
+        
         .content.active {
             transform: translateY(-100%);
         }
+        
         .contact-container {
             max-width: 800px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
         }
         
         .contact-info {
-            flex: 0 0 45%; /* Adjust as needed */
+            flex: 0 0 45%;
+            padding: 20px;
         }
         
         .contact-form {
-            flex: 0 0 45%; /* Adjust as needed */
+            flex: 0 0 45%;
+            padding: 20px;
+        }
+        
+        .contact-info p {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
         }
         
         .contact-info ul {
@@ -154,6 +164,14 @@
         
         .contact-form button[type="submit"]:hover {
             background-color: #ff1f5a;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table, th, td {
+            border: 1px solid white;
         }
         
     </style>
