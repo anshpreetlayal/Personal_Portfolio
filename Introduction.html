@@ -20,6 +20,13 @@
             position: relative;
         }
         
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    
+        /* Apply the animation to the content section */
         .section {
             height: 100vh;
             width: 100%;
@@ -30,15 +37,15 @@
             text-align: center;
             color: white;
             font-size: 2rem;
-            background-color: rgb(17, 15, 17); 
+            background-color: rgb(17, 15, 17);
+            animation: backgroundAnimation 20s infinite;
         }
-        
+    
         .centered {
-            background-color: rgba(58, 4, 31, 0.5); 
-            padding: 20px; 
-            border-radius: 10px; 
+            background-color: rgba(58, 4, 31, 0.5);
+            padding: 20px;
+            border-radius: 10px;
         }
-        
         
         .navbar {
             position: fixed;
