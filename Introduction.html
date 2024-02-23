@@ -7,11 +7,10 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: rgb(36, 24, 27);
+            font-family: Georgia, serif;
+            background-color: #333;
+            color: #eee;
         }
-        
         
         .container {
             width: 100%;
@@ -20,12 +19,6 @@
             position: relative;
         }
         
-        @keyframes backgroundAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-    
         .section {
             height: 100vh;
             width: 100%;
@@ -34,14 +27,14 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: rgb(0, 0, 0);
-            font-size: 2rem;
-            background-color: #000000;
+            color: #333;
+            font-size: 1.5rem;
+            background-color: #ddd;
             animation: backgroundAnimation 20s infinite;
         }
-    
+        
         .centered {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
         }
@@ -52,37 +45,33 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            background-color: rgba(5, 16, 34, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 10px;
             display: flex;
             justify-content: space-evenly;
+            flex-direction: row;
             transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         
         .navbar a {
-            color: white;
+            color: #333;
             text-decoration: none;
-            margin: 0 10px;
-            padding: 10px 15px;
+            padding: 5px 10px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
         
-        .navbar li {
-            display: inline;
-        }
-        
         .navbar a:hover {
-            background-color: rgba(236, 109, 198, 0.2);
+            background-color: rgba(0, 0, 0, 0.1);
         }
         
         .navbar-logo {
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-weight: bold;
-            color: rgb(248, 248, 248);
+            color: #333;
             text-decoration: none;
         }
-        
         
         .content {
             position: relative;
@@ -99,24 +88,24 @@
             max-width: 800px;
             margin: 0 auto;
             display: flex;
-            justify-content:space-around;
+            justify-content: space-around;
             background-color: rgba(0, 0, 0, 0.2);
-            padding: 80px;
+            padding: 20px;
         }
         
         .contact-info {
             flex: 0 0 45%;
-            padding: 20px;
+            padding: 10px;
         }
         
         .contact-form {
             flex: 0 0 45%;
-            padding: 40px;
+            padding: 20px;
         }
         
         .contact-info p {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
+            background-color: rgba(238, 237, 237, 0.5);
+            padding: 5px;
             border-radius: 5px;
         }
         
@@ -126,7 +115,7 @@
         }
         
         .contact-info ul li {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         
         .contact-info ul li strong {
@@ -134,17 +123,17 @@
         }
         
         .contact-info ul li a {
-            color: #180741;
+            color: #999;
             text-decoration: none;
             font-weight: bold;
         }
         
         .contact-form h3 {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         
         .contact-form .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         
         .contact-form label {
@@ -157,55 +146,54 @@
         .contact-form input[type="email"],
         .contact-form textarea {
             width: 100%;
-            padding: 10px;
+            padding: 5px;
             margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
         
         .contact-form textarea {
-            height: 150px;
+            height: 100px;
         }
         
         .contact-form button[type="submit"] {
-            background-color: #1a05da;
+            background-color: #333;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 5px 10px;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
         
         .contact-form button[type="submit"]:hover {
-            background-color: #f7b0f3;
+            background-color: #666;
         }
         
         table {
-            border-collapse: collapse; 
-            width: 100%; 
-            border: 2px solid #050505; 
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid #333;
         }
         
         th, td {
-            border: 1px solid #000; 
-            padding: 8px; 
-            text-align: left; 
+            border: 1px solid #333;
+            padding: 5px;
+            text-align: left;
         }
         
         th {
-            background-color: #cfcae7; 
-            font-weight: bold; 
+            background-color: #eee;
+            font-weight: bold;
         }
         
         td {
-            background-color: #a7ade7; 
+            background-color: #ccc;
         }
         
         caption {
-            caption-side: bottom; 
+            caption-side: bottom;
         }
-        
         
     </style>
 </head>
